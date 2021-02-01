@@ -47,7 +47,7 @@ namespace services
             }
             catch (NullReferenceException ex)
             {
-                throw new NullReferenceException("Error while updating order's status.");
+                throw new NullReferenceException("Error while updating order's status. Detail: " + ex.Message);
             }
             catch (Exception ex)
             {
@@ -69,7 +69,7 @@ namespace services
             }
             catch (NullReferenceException ex)
             {
-                throw new NullReferenceException("Error while distributing the order");
+                throw new NullReferenceException("Error while distributing the order. Detail: " + ex.Message);
             }
             catch (Exception ex)
             {
