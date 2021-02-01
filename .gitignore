@@ -1,0 +1,7 @@
+bin/
+obj/
+OrderRouter/bin/
+OrderRouter/obj/
+.vscode/
+OrderRouter/netcoreapp3.1/Properties/launchSettings.json
+Properties/launchSettings.json
