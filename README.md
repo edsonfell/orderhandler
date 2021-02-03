@@ -14,19 +14,19 @@ It was built with .Net Core, so you should be able to run the project in any OS 
 #### Building and running with .Net CLI and VS Code
 - With you terminal opened, clone the project to any directory you prefer.
 - Open your VS Code then click on File -> Open... and select the project folder.
-- Let's build the project clicking on Terminal -> New Terminal. In the new terminal below type the following command: **`dotnet build` **
+- Let's build the project clicking on Terminal -> New Terminal. In the new terminal below type the following command: **`dotnet build`**. It will download all the dependencies we have in the project.
 - After this you should see a message like *Build Succeeded*
 - Now we are ready to run the project with the following command: **`dotnet run --project OrderRouter/OrderRouter.csproj`**
 
 #### Building and running in Windows with Visual Studio 2019
-- With you terminal opened, clone the project to any directory you prefer.
-- Open your VS Code then click on File -> Open... and select the project folder.
-- Let's try to build the project clicking on Terminal -> New Terminal. In the new terminal window below type the following command: **`dotnet build` **
-- After this, you should see a message like *Build Succeeded*
-- Now we are ready to run the project with the following command: **`dotnet run --project OrderRouter/OrderRouter.csproj`**
+- Clone the project to any directory you prefer.
+- Open your Visual Studio 2019 and click on File -> Open -> Project/Solution. Select the .sln file in the project folder.
+- Let's build the project clicking on Build -> Build Solution. It will download all the dependencies we have in the project.
+- After this you should see a message like *Build Succeeded*
+- Make sure the **OrderRouter** project is select as the startup project and then click to run the project.
 
 ### Available routes
-As this project is just a simple API part of the restaurant complex system, we only have a POST route: `https://localhost:5001/orders`
+As this project is just a simple API part of the restaurant complex system, we only have a POST route: `https://localhost:5001/orders (Unix)`  or `https://localhost:44359/ (Windows)` 
 We assume this route will receive the order from the service counter system, so in the request body we send only the product's IDs and the kitchen area ID. See the request body example below:
 ```json
 {
